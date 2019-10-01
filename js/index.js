@@ -41,7 +41,7 @@ document.querySelectorAll(".nav-link").forEach(e => {
 })
 
 //add Hidden Background
-// 3------------------(click)----------------
+// 4------------------(dblclick)----------------
 const hiddenBackground = document.querySelector("body");
 //Change Font Color
 const fontColorChange = document.querySelector(".content-pick")
@@ -54,5 +54,21 @@ hiddenBackground.addEventListener("dblclick", () => {
     fontColorChange.style.color = "white";
 })
 
+//Change Image
+//5--------------------(resize)--------------
+const changeImg = document.querySelector(".img-fluid");
 
+window.addEventListener("resize", () => {
+    changeImg.src = "img/partybus.jpg"
+})
 
+//Change Image
+//6--------------------(mouseover)----------------
+const maneuverOn = document.querySelector(".south-seas");
+
+maneuverOn.addEventListener("mouseover", () => {
+    maneuver.src = "img/mountain-lake.jpg"
+})
+
+//Chnage Image back
+//7----------------------(mouseout)-------------------
