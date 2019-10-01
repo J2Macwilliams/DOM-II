@@ -1,5 +1,6 @@
 // Your code goes here
-//1------------------------------------
+// Fun Bus Logo change size
+//1--------------(mouseenter)-------------------
 const logoSize = document.querySelector(".logo-heading");
 
 logoSize.addEventListener("mouseenter" , () => {
@@ -7,38 +8,43 @@ logoSize.addEventListener("mouseenter" , () => {
  logoSize.style.trasition = "all 0.4s"
 })
 
+//2---------------(mouseleave)------------------
 logoSize.addEventListener("mouseleave" , () => {
     logoSize.style.transform = "scale(1)";
     logoSize.style.trasition = "all 0.4s"
    })
 
-//2------------------------------------
 
+//Background Change Color
+// 3------------------(click)----------------
 const bodyBackground = document.querySelector("body");
 
 bodyBackground.addEventListener("click", () => {
     bodyBackground.style.backgroundColor = "#fde250"
 })
 
+//NavBackground Change Color
+// 3------------------(click)----------------
 const navBackground = document.querySelector(".main-navigation");
 
-navBackground.addEventListener("click", () => {
-    navBackground.style.backgroundColor = "#98cc9e"
+navBackground.addEventListener("click", (event) => {
+    navBackground.style.backgroundColor = "#98cc9e";
+    event.stopPropagation();
 })
 
+//Nav Links change color
+// 3------------------(click)----------------
 document.querySelectorAll(".nav-link").forEach(e => {
     e.addEventListener("click" , () => {
         e.style.color = "white";
     })
 })
 
+//add Hidden Background
+// 3------------------(click)----------------
 const hiddenBackground = document.querySelector("body");
-
+//Change Font Color
 const fontColorChange = document.querySelector(".content-pick")
-
-const bottomFontTitle = document.querySelectorAll(".content-pick h4")
-
-const bottomFontContent = document.querySelectorAll(".content-pick p")
 
 hiddenBackground.addEventListener("dblclick", () => {
     hiddenBackground.style.background = "url('img/confetti.jpg')";
@@ -46,8 +52,6 @@ hiddenBackground.addEventListener("dblclick", () => {
     hiddenBackground.style.backgroundRepeat = "no-repeat";
     hiddenBackground.style.backgroundRepeat = "no-repeat";
     fontColorChange.style.color = "white";
-   
-
 })
 
 
