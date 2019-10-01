@@ -67,8 +67,14 @@ window.addEventListener("resize", () => {
 const maneuverOn = document.querySelector(".south-seas");
 
 maneuverOn.addEventListener("mouseover", () => {
-    maneuver.src = "img/mountain-lake.jpg"
+    maneuverOn.src = "img/mountain-lake.jpg"
 })
 
-//Chnage Image back
+//Change Image back
 //7----------------------(mouseout)-------------------
+const getOff = document.querySelector(".south-seas");
+
+getOff.addEventListener("mouseout", () => {
+    getOff.src = "img/destination.jpg"
+})
+
