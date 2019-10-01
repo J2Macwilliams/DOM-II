@@ -71,10 +71,31 @@ maneuverOn.addEventListener("mouseover", () => {
 })
 
 //Change Image back
-//7----------------------(mouseout)-------------------
+//7----------------------(mouseout)------------------
 const getOff = document.querySelector(".south-seas");
 
 getOff.addEventListener("mouseout", () => {
     getOff.src = "img/destination.jpg"
 })
 
+//Map Zoom
+//8--------------------(wheel)-------------------
+
+function zoom(event) {
+    event.preventDefault();
+  
+    scale += event.deltaY * -0.01;
+  
+    // Restrict scale
+    scale = Math.min(Math.max(.125, scale), 4);
+  
+    // Apply scale transform
+    mapZoom.style.transform = `scale(${scale})`;
+  }
+  let scale = 1;
+  const mapZoom = document.querySelector(".quest");
+  mapZoom.onwheel = zoom;
+
+  mapZoom.addEventListener("wheel", zoom);
+
+  
