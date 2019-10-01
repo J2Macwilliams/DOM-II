@@ -98,4 +98,10 @@ function zoom(event) {
 
   mapZoom.addEventListener("wheel", zoom);
 
-  
+
+//Change background
+//9----------------(scroll)---------------------
+window.addEventListener('scroll', () => {
+    document.body.style.backgroundColor="black";
+    document.body.style.color="white"
+  })
