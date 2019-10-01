@@ -32,13 +32,23 @@ document.querySelectorAll(".nav-link").forEach(e => {
     })
 })
 
+const hiddenBackground = document.querySelector("body");
+
+const fontColorChange = document.querySelector(".content-pick")
+
+const bottomFontTitle = document.querySelectorAll(".content-pick h4")
+
+const bottomFontContent = document.querySelectorAll(".content-pick p")
+
+hiddenBackground.addEventListener("dblclick", () => {
+    hiddenBackground.style.background = "url('img/confetti.jpg')";
+    hiddenBackground.style.backgroundSize = "cover";
+    hiddenBackground.style.backgroundRepeat = "no-repeat";
+    hiddenBackground.style.backgroundRepeat = "no-repeat";
+    fontColorChange.style.color = "white";
+   
+
+})
 
 
 
-
-
-// document.querySelectorAll(".card-title").forEach(el => {
-//     el.addEventListener("click", () => {
-//       el.style.color= "#e62739";
-//     })
-//   })
