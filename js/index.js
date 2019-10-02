@@ -129,6 +129,21 @@ window.addEventListener("scroll", () => {
     document.body.style.color = "white";
   });
 
+//Add Music
+//Fun--------------------------------
+const lastContent = document.createElement("iframe");
+lastContent.src = "https://www.youtube.com/embed/6Zbi0XmGtMw"
+lastContent.style.width = "100%"
+lastContent.style.height = "300px"
+lastContent.style.marginTop = "20px"
+lastContent.style.borderRadius = "10px"
+
+
+const ParentSection = document.querySelector(".content-destination");
+
+ParentSection.appendChild(lastContent);
+
+
 //Rotate Bus on Open
 //Stretch-------------------------------------
   TweenMax.to('.bus-sand', 1, {
@@ -138,3 +153,5 @@ window.addEventListener("scroll", () => {
   
  
 
+
+  
