@@ -98,10 +98,24 @@ function zoom(event) {
 
   mapZoom.addEventListener("wheel", zoom);
 
+//Flip the image
+//9------------------(keydown)--------------------
+//Only 1 window event listener will occur.
+
+//   const warped = document.querySelector(".bus-sand");
+ 
+// function rotate(){
+//     warped.style.transform = "rotate(180deg)";
+// }
+
+// window.addEventListener("keydown", rotate);
+
 
 //Change background
-//9----------------(scroll)---------------------
-window.addEventListener('scroll', () => {
-    document.body.style.backgroundColor="black";
-    document.body.style.color="white"
-  })
+//10----------------(scroll)---------------------
+window.addEventListener("scroll", () => {
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+  });
+
+
