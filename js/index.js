@@ -111,13 +111,13 @@ function zoom(event) {
 //9------------------(keydown)--------------------
 //Only 1 window event listener will occur.
 
-//   const warped = document.querySelector(".bus-sand");
+  const warped = document.querySelector(".bus-sand");
  
-// function rotate(){
-//     warped.style.transform = "rotate(180deg)";
-// }
+function rotate(){
+    warped.style.transform = "rotate(180deg)";
+}
 
-// window.addEventListener("keydown", rotate);
+window.addEventListener("keydown", rotate);
 
 
 //Change background
