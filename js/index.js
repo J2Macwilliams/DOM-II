@@ -29,6 +29,7 @@ const navBackground = document.querySelector(".main-navigation");
 
 navBackground.addEventListener("click", (event) => {
     navBackground.style.backgroundColor = "#98cc9e";
+    //stop Propagation--------------------------------------
     event.stopPropagation();
 })
 
@@ -38,6 +39,14 @@ document.querySelectorAll(".nav-link").forEach(e => {
     e.addEventListener("click" , () => {
         e.style.color = "white";
     })
+})
+
+const stopLink = document.querySelector(".nav-link");
+
+stopLink.addEventListener("click", (event) => {
+  console.log("stopped link");
+  
+  event.preventDefault();
 })
 
 //add Hidden Background
