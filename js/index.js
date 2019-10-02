@@ -117,7 +117,9 @@ function rotate(){
     warped.style.transform = "rotate(180deg)";
 }
 
+
 window.addEventListener("keydown", rotate);
+
 
 
 //Change background
@@ -127,4 +129,12 @@ window.addEventListener("scroll", () => {
     document.body.style.color = "white";
   });
 
+//Rotate Bus on Open
+//Stretch-------------------------------------
+  TweenMax.to('.bus-sand', 1, {
+    rotation: 720,
+    ease: Elastic.easeOut.config( 1, 0.75)
+  })
+  
+ 
 
